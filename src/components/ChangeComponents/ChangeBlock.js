@@ -21,6 +21,7 @@ class ChangeBlock extends React.Component{
         <OutlineText
           borderSize='1px'
           color={colorVariants[i].shadowColor}
+          id={i}
         >
           5
         </OutlineText>

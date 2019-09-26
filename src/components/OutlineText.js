@@ -10,7 +10,8 @@ export const OutlineText = (props) => {
                   -${borderSize} ${borderSize} 0 ${color}`
   }
   return (
-    <div style={style}>
+    <div id={props.id}
+         style={style}>
       {props.children}
     </div>
   )
