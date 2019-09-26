@@ -1,6 +1,5 @@
 
 body {
-
 	 -webkit-print-color-adjust: exact;
 	 margin: 0;
 }
@@ -9,6 +8,24 @@ body {
 	 height: 100vh;
 	 width: 100%;
 	 display: flex;
+	 flex-direction: column;
+ }
+
+ .changeBlock {
+	 width: 100%;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 flex-direction: column;
+	 margin: 20px 0 ;
+ }
+
+ .playerInput {
+	 margin-top: 15px;
+ }
+
+ .colorGroup {
+	 display: flex;
  }
 
 .card {
@@ -16,18 +33,48 @@ body {
 	margin: auto;
 	width: 600px;
 	height: 400px;
-	background-color: #001f3f;
+	/*background-color: #001f3f;*/
 }
 
 .card__img {
 	width: 50%;
-	height: 100%;	
-	background-color: #0074D9;
+	height: 100%;
+	background-color:  #111;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: 1;
 }
 
-.card__img img {
+.player {
+	position: absolute;
+	z-index: 3;
+	width: 150px;
+	height: 75px;
+	background-color:  #111;
+	bottom: 0;
+	right: 0;
+
+}
+
+.player__info {
 	width: 100%;
-	height: 100%;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.player .title {
+	font-size: 20px;
+
+}
+
+.player .subTitle {
+	display: flex;
+
 }
 
 .card__health {
@@ -37,7 +84,9 @@ body {
 }
 
 .healthTable {
-	margin: 10px;
+	height: 100%;
+	margin-left: 5px;
+	margin-top: 3px;
 }
 
 .bigHealth {
@@ -50,7 +99,6 @@ body {
 }
 
 .smallHealth {
-	margin-top: 10px;
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 }
@@ -69,7 +117,7 @@ body {
  .bigHealth .points {
 	 width: 55px;
 	 height: 55px;
-	 font-size: 40px;
+	 font-size: 30px;
 	 background-color: grey;
 	 color: #ffffff;
  }
@@ -77,10 +125,9 @@ body {
  .smallHealth .points {
 	 width: 45px;
 	 height: 45px;
-	 font-size: 30px;
+	 font-size: 40px;
 	 background-color: #745fa4;
 	 color: #272324;
-
  }
 
  .bigHealth .special {
@@ -88,12 +135,18 @@ body {
 	 color: black;
  }
 
- .mainHP {
-	 text-shadow: 0 0 5px #F012BE
+ .colorView {
+	 width: 40px;
+	 height: 40px;
  }
 
- .lowHP {
-	 text-shadow: 0 0 5px #db5965
-
+ .variant {
+	 width: 45px;
+	 height: 45px;
+	 font-size: 40px;
+	 color: black;
  }
+
+
+
 

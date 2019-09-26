@@ -1,10 +1,11 @@
 import React from 'react';
-import Card from "./components/Card/Card";
+
+import Page from "./components/Page/Page";
 
 function App() {
   return (
     <div className="wrapper">
-      <Card/>
+      <Page/>
     </div>
   );
 }
