@@ -1,12 +1,47 @@
 [
- {"backgroundColor": "#745fa4", "shadowColor": "#db5965"}
-,{"backgroundColor": "#f55a5e", "shadowColor": "#ffe79d"}
-,{"backgroundColor": "#fff99e", "shadowColor": "#c16a25"}
-,{"backgroundColor": "#37967e", "shadowColor": "#bdbc6c"}
-,{"backgroundColor": "#fa510c", "shadowColor": "#ffb337"}
-,{"backgroundColor": "#1b88b3", "shadowColor": "#ed6a78"}
-,{"backgroundColor": "#ed0e13", "shadowColor": "#ffd13d"}
-,{"backgroundColor": "#f05887", "shadowColor": "#ffd16b"}
-,{"backgroundColor": "#f53c44", "shadowColor": "#f9ae77"}
-,{"backgroundColor": "#ba3919", "shadowColor": "#9e973d"}
+  {
+    "colors": [
+      {
+        "backgroundColor": "#745fa4",
+        "shadowColor": "#db5965"
+      },
+      {
+        "backgroundColor": "#f55a5e",
+        "shadowColor": "#ffe79d"
+      },
+      {
+        "backgroundColor": "#fff99e",
+        "shadowColor": "#c16a25"
+      },
+      {
+        "backgroundColor": "#37967e",
+        "shadowColor": "#bdbc6c"
+      },
+      {
+        "backgroundColor": "#fa510c",
+        "shadowColor": "#ffb337"
+      },
+      {
+        "backgroundColor": "#1b88b3",
+        "shadowColor": "#ed6a78"
+      },
+      {
+        "backgroundColor": "#ed0e13",
+        "shadowColor": "#ffd13d"
+      },
+      {
+        "backgroundColor": "#f05887",
+        "shadowColor": "#ffd16b"
+      },
+      {
+        "backgroundColor": "#f53c44",
+        "shadowColor": "#f9ae77"
+      },
+      {
+        "backgroundColor": "#ba3919",
+        "shadowColor": "#9e973d"
+      }
+    ],
+    "backgroundImage": ""
+  }
 ]

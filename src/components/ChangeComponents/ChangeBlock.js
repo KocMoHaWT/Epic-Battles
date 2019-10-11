@@ -1,34 +1,24 @@
 import React from 'react'
-import {PlayerBlock} from "./PlayerBlock";
-import {OutlineText} from "../OutlineText";
+import {PlayerBlock} from './PlayerBlock';
+import PreviewVariant from '../PreviewVariant';
 
 
-class ChangeBlock extends React.Component{
+
+class ChangeBlock extends React.Component {
   state = {
     backgroundColor: '#0074D9'
   }
 
   renderColorVariants = () => {
-    let arrayOfVariants = []
-    const colorVariants = this.props.colorVariants;
-    for(let i = 0; i < colorVariants.length; i++) {
-      arrayOfVariants.push(<div id={i}
-           key={i}
-           className='points variant'
-           style={colorVariants[i]}
-        onClick={this.props.handleClick}
-      >
-        <OutlineText
-          borderSize='1px'
-          color={colorVariants[i].shadowColor}
-          id={i}
-        >
-          5
-        </OutlineText>
-      </div>)
-    }
-    return arrayOfVariants
-  }
+    return this.props.colorVariants.map((elem, index) => (
+      <PreviewVariant index={index}
+                      handleClick={() => this.props.handleClick(index)}
+                      backgroundColor={elem.backgroundColor}
+                      shadowColor={elem.shadowColor}
+      />
+    ))
+
+  };
 
   render() {
     return (
@@ -40,6 +30,8 @@ class ChangeBlock extends React.Component{
         {this.props.photo && <PlayerBlock
           handleTitle={this.props.handleTitle}
           handleSubTitle={this.props.handleSubTitle}
+          title={this.props.title}
+          subTitle={this.props.subTitle}
         />}
       </div>
     )

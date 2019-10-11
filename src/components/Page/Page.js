@@ -3,28 +3,40 @@ import Card from "../Card/Card";
 import ChangeBlock from '../ChangeComponents/ChangeBlock'
 import colorJson from '../../colors'
 
-class Page extends Component {
-  state = {
-    colorVariants: [],
 
-    currentVariant: {backgroundColor : '#745fa4', shadowColor: '#db5965'},
-    title: 'Вася',
-    subTitle: 'Рубист на рельсах',
-    photo: null
-  };
+class Page extends Component {
+  constructor(props) {
+    super(props);
+    this.refInputFile = React.createRef();
+    this.state = {
+      colorVariants: [],
+      backgroundUrl: '',
+      currentVariant: {backgroundColor : '#745fa4', shadowColor: '#db5965'},
+      title: 'Вася',
+      subTitle: 'Рубист на рельсах',
+      photo: null
+    };
+  }
+
 
   componentDidMount() {
+    console.log(colorJson[0].backgroundImage);
     this.setState({
-      colorVariants: colorJson
+      colorVariants: colorJson[0].colors,
+      backgroundImage: colorJson[0].backgroundImage
     })
   }
 
-  handlePickVariant = (e) => {
-    console.log(e.target.id);
-    const colors = this.state.colorVariants[+e.target.id];
+  handleClick = (id) => {
+    console.log(id);
+    const colors = this.state.colorVariants[+id];
     this.setState({
       currentVariant: {backgroundColor: colors.backgroundColor, shadowColor: colors.shadowColor}
     })
+  }
+
+  handleButtonClick = () => {
+    document.getElementById('inputFile').click();
   }
 
   handleTitle = (e) => {
@@ -40,20 +52,28 @@ class Page extends Component {
   }
 
   handleUploadPhoto = (event) => {
-    this.setState({
-      photo: URL.createObjectURL(event.target.files[0])
-    })
-  }
+    if(event.target.files[0]) {
+      this.setState({
+        photo: URL.createObjectURL(event.target.files[0])
+      })
+    }
+  };
 
   render() {
+    const style = {
+      backgroundImage: `url( ${this.state.backgroundImage})`,
+      backgroundSize: 'cover'
+    };
     return (
-     <div>
+     <div className="wrapper" style={style}>
        <ChangeBlock
          colorVariants={this.state.colorVariants}
-         handleClick={this.handlePickVariant}
+         handleClick={this.handleClick}
          handleTitle={this.handleTitle}
          handleSubTitle={this.handleSubTitle}
          photo={this.state.photo}
+         title={this.state.title}
+         subTitle={this.state.subTitle}
        />
        <Card
          photo={this.state.photo}
@@ -62,6 +82,8 @@ class Page extends Component {
          currentVariant={this.state.currentVariant}
          title={this.state.title}
          subTitle={this.state.subTitle}
+         handleButtonClick={this.handleButtonClick}
+        refInputFile={this.refInputFile}
        />
      </div>
     );

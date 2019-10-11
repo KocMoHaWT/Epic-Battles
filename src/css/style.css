@@ -1,7 +1,7 @@
-
 body {
 	 -webkit-print-color-adjust: exact;
 	 margin: 0;
+	 font-family: Helvetica, sans-serif;
 }
 
  .wrapper {
@@ -12,28 +12,49 @@ body {
  }
 
  .changeBlock {
-	 width: 100%;
-	 display: flex;
-	 justify-content: center;
-	 align-items: center;
-	 flex-direction: column;
-	 margin: 20px 0 ;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 10px auto;
+	background: #2f3238;
+	border-radius: 10px;
  }
 
  .playerInput {
-	 margin-top: 15px;
+
+	height: 75px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 0.5fr 1fr;
+	align-items: center;
  }
 
- .colorGroup {
-	 display: flex;
+ .playerInput label {
+	margin-right: 5px;
+	text-align: right;
+	font-size: 1.5rem;
+	color: #01df01;
  }
 
+ .playerInput input {
+	 margin-left: 5px;
+	 border: 1px solid #8904b1;
+	 border-radius: 5px;
+	 background-color: transparent;
+	 color: white;
+	 font-size: 1.5rem;
+	 margin-right: 5px;
+ }
+
+
+/* Card
+ ============================================ */
 .card {
 	display: flex;
-	margin: auto;
+	margin: 0 auto;
 	width: 600px;
 	height: 400px;
-	/*background-color: #001f3f;*/
 }
 
 .card__img {
@@ -47,6 +68,55 @@ body {
 	z-index: 1;
 }
 
+.img__block {
+	height: 100%;
+}
+
+.hidden {
+	visibility: hidden;
+	display: none;
+}
+
+.inputFile {
+	width: 100%;
+	height: 100%;
+	border: none;
+	position: absolute;
+	z-index: 3;
+	background-color: transparent;
+}
+
+.inputFile::-webkit-file-upload-button {
+	visibility: hidden;
+
+}
+
+.inputFile::before {
+	content: 'Select image';
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin: 0 auto;
+	height: 100%;
+	-webkit-user-select: none;
+	cursor: pointer;
+	font-weight: 700;
+	font-size: 20px;
+	visibility: hidden;
+	color: #35d600;
+}
+.inputFile:hover::before {
+	visibility: visible;
+}
+
+.static::before {
+	visibility: visible;
+}
+
+
+/* Player
+ ============================================ */
 .player {
 	position: absolute;
 	z-index: 3;
@@ -56,25 +126,23 @@ body {
 	bottom: 0;
 	right: 0;
 
+	color: white;
+	text-align: right;
+
 }
 
 .player__info {
-	width: 100%;
+	height: 100%;
 	color: white;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	text-align: center;
+	text-align: right;
+	padding-right: 5px;
 }
 
 .player .title {
 	font-size: 20px;
-
-}
-
-.player .subTitle {
-	display: flex;
-
 }
 
 .card__health {
@@ -85,20 +153,20 @@ body {
 
 .healthTable {
 	height: 100%;
-	margin-left: 5px;
-	margin-top: 3px;
+	padding: 5px;
 }
 
 .bigHealth {
 	width: 100%;
-	height: 85%;
+	height: 80%;
 	display: grid;
 	grid-template-rows: repeat(5, 1fr);
 	grid-template-columns: repeat(4, 1fr);
-	grid-gap: 5px;
+	margin-top: 5px;
 }
 
 .smallHealth {
+	margin-top: 5px;
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 }
@@ -108,27 +176,32 @@ body {
 	justify-content: center;
 	align-items: center;
 	border-radius: 50%;
-	margin: 5px 5px 0 5px;
 	color: #DDD;
 	font-family: 'Lobster', cursive;
 	font-weight: 800;
 }
 
- .bigHealth .points {
-	 width: 55px;
-	 height: 55px;
-	 font-size: 30px;
-	 background-color: grey;
-	 color: #ffffff;
- }
+/* Big Health
+  ============================================ */
+.bigHealth .points {
+	width: 60px;
+	height: 60px;
+	font-size: 30px;
+	background-color: grey;
+	color: #ffffff;
+	margin: 0 auto;
+}
 
- .smallHealth .points {
-	 width: 45px;
-	 height: 45px;
-	 font-size: 40px;
-	 background-color: #745fa4;
-	 color: #272324;
- }
+/* Small Healt
+  ============================================ */
+.smallHealth .points {
+	width: 50px;
+	height: 50px;
+	font-size: 40px;
+	margin: 0 auto;
+	background-color: #745fa4;
+	color: #272324;
+}
 
  .bigHealth .special {
 	 background-color: #fff;
@@ -145,8 +218,68 @@ body {
 	 height: 45px;
 	 font-size: 40px;
 	 color: black;
+	 margin: 2px;
  }
 
+.colorGroup {
+	display: flex;
+}
+
+ .previewBlock {
+	 display: flex;
+	 flex-direction: column;
+	 width: 100%;
+	margin: 5px 10px;
+	cursor: pointer;
+ }
+
+ .previewBlock__big, .previewBlock__small{
+	margin: 0 auto;
+ }
+
+ .previewBlock__big .points{
+	 background-color: #fff;
+	 color: black;
+	 width: 50px;
+	 height: 50px;
+	 font-size: 30px;
+ }
+
+ .previewBlock__small {
+	 margin-top: 5px;
+	 width: 50px;
+	 height: 50px;
+	 font-size: 40px;
+
+ }
+
+.previewBlock__small .points {
+	color: #272324;
+}
+
+h1 {
+	margin: 5px;
+	color: #01df01;
+	font-family: Pure Evil;
+ }
+
+ @media print {
+	.changeBlock {
+		display: none;
+	}
+
+	 .wrapper {
+		 background: none !important ;
+	 }
+
+	 .inputFile {
+		 display: none;
+	 }
+
+	 button {
+		 visibility: hidden;
+	 }
+ }
 
 
 
