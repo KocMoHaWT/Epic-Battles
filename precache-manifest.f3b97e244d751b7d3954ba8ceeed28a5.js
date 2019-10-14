@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d1551f5d1581007345a69187bc8abc8b",
+    "revision": "22579dbbb1bc8b221fffd3184d224560",
     "url": "/Epic-Battles/index.html"
   },
   {
@@ -8,15 +8,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Epic-Battles/static/css/2.a3c6ef96.chunk.css"
   },
   {
-    "revision": "472e1d037dc2e9796314",
-    "url": "/Epic-Battles/static/css/main.8d1334fe.chunk.css"
+    "revision": "4c211e709de166a18db2",
+    "url": "/Epic-Battles/static/css/main.31d25084.chunk.css"
   },
   {
     "revision": "2b9253dc19930c30c47b",
     "url": "/Epic-Battles/static/js/2.0cf0c745.chunk.js"
   },
   {
-    "revision": "472e1d037dc2e9796314",
+    "revision": "4c211e709de166a18db2",
     "url": "/Epic-Battles/static/js/main.36e013d1.chunk.js"
   },
   {
