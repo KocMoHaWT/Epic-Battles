@@ -42,6 +42,6 @@
         "shadowColor": "#9e973d"
       }
     ],
-    "backgroundImage": ""
+    "backgroundImage": "./images/background.png"
   }
 ]

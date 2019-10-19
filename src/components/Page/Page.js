@@ -10,7 +10,7 @@ class Page extends Component {
     this.refInputFile = React.createRef();
     this.state = {
       colorVariants: [],
-      backgroundUrl: '',
+
       currentVariant: {backgroundColor : '#745fa4', shadowColor: '#db5965'},
       title: 'Вася',
       subTitle: 'Рубист на рельсах',
@@ -23,7 +23,7 @@ class Page extends Component {
     console.log(colorJson[0].backgroundImage);
     this.setState({
       colorVariants: colorJson[0].colors,
-      backgroundImage: colorJson[0].backgroundImage
+
     })
   }
 
@@ -66,6 +66,7 @@ class Page extends Component {
     };
     return (
      <div className="wrapper" style={style}>
+       {/*<img src="../../../public/images/background.png" alt=""/>*/}
        <ChangeBlock
          colorVariants={this.state.colorVariants}
          handleClick={this.handleClick}
