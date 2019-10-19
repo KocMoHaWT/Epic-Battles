@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Epic-Battles/precache-manifest.7aafacbb8d01d5a41a08b8f9313c27a2.js"
+  "/Epic-Battles/precache-manifest.eec6890261f94be1e37a8f3e422f8ea4.js"
 );
 
 self.addEventListener('message', (event) => {

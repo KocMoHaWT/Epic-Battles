@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Epic-Battles/static/css/main.fb4ad10e.chunk.css",
-    "main.js": "/Epic-Battles/static/js/main.9c4e1dcf.chunk.js",
-    "main.js.map": "/Epic-Battles/static/js/main.9c4e1dcf.chunk.js.map",
+    "main.css": "/Epic-Battles/static/css/main.59a36105.chunk.css",
+    "main.js": "/Epic-Battles/static/js/main.f167759c.chunk.js",
+    "main.js.map": "/Epic-Battles/static/js/main.f167759c.chunk.js.map",
     "runtime-main.js": "/Epic-Battles/static/js/runtime-main.2e42fe76.js",
     "runtime-main.js.map": "/Epic-Battles/static/js/runtime-main.2e42fe76.js.map",
     "static/css/2.a3c6ef96.chunk.css": "/Epic-Battles/static/css/2.a3c6ef96.chunk.css",
     "static/js/2.76de5a0a.chunk.js": "/Epic-Battles/static/js/2.76de5a0a.chunk.js",
     "static/js/2.76de5a0a.chunk.js.map": "/Epic-Battles/static/js/2.76de5a0a.chunk.js.map",
     "index.html": "/Epic-Battles/index.html",
-    "precache-manifest.7aafacbb8d01d5a41a08b8f9313c27a2.js": "/Epic-Battles/precache-manifest.7aafacbb8d01d5a41a08b8f9313c27a2.js",
+    "precache-manifest.eec6890261f94be1e37a8f3e422f8ea4.js": "/Epic-Battles/precache-manifest.eec6890261f94be1e37a8f3e422f8ea4.js",
     "service-worker.js": "/Epic-Battles/service-worker.js",
     "static/css/2.a3c6ef96.chunk.css.map": "/Epic-Battles/static/css/2.a3c6ef96.chunk.css.map",
-    "static/css/main.fb4ad10e.chunk.css.map": "/Epic-Battles/static/css/main.fb4ad10e.chunk.css.map",
+    "static/css/main.59a36105.chunk.css.map": "/Epic-Battles/static/css/main.59a36105.chunk.css.map",
     "static/media/background.png": "/Epic-Battles/static/media/background.46e2bb89.png",
-    "static/media/mobileBro.jpg": "/Epic-Battles/static/media/mobileBro.befba4d5.jpg"
+    "static/media/style.scss": "/Epic-Battles/static/media/mob.8c06c544.jpg"
   }
 }
