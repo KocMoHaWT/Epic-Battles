@@ -1,5 +1,5 @@
 import React from 'react';
-import Page from "../../safe epick/src/components/Page/Page";
+import Page from './Page/Page';
 
 const DEFAULT_VIEWPORT_STYLE = {
   width: '100vw',
