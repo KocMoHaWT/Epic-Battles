@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/github.io/Epic-Battles/static/css/main.f5ecf9bd.chunk.css",
-    "main.js": "/github.io/Epic-Battles/static/js/main.3367b857.chunk.js",
-    "main.js.map": "/github.io/Epic-Battles/static/js/main.3367b857.chunk.js.map",
-    "runtime-main.js": "/github.io/Epic-Battles/static/js/runtime-main.89477f9e.js",
-    "runtime-main.js.map": "/github.io/Epic-Battles/static/js/runtime-main.89477f9e.js.map",
-    "static/css/2.a3c6ef96.chunk.css": "/github.io/Epic-Battles/static/css/2.a3c6ef96.chunk.css",
-    "static/js/2.ef09fb9c.chunk.js": "/github.io/Epic-Battles/static/js/2.ef09fb9c.chunk.js",
-    "static/js/2.ef09fb9c.chunk.js.map": "/github.io/Epic-Battles/static/js/2.ef09fb9c.chunk.js.map",
-    "index.html": "/github.io/Epic-Battles/index.html",
-    "precache-manifest.a9b2b4d2068b2402e3e67850019dc36d.js": "/github.io/Epic-Battles/precache-manifest.a9b2b4d2068b2402e3e67850019dc36d.js",
-    "service-worker.js": "/github.io/Epic-Battles/service-worker.js",
-    "static/css/2.a3c6ef96.chunk.css.map": "/github.io/Epic-Battles/static/css/2.a3c6ef96.chunk.css.map",
-    "static/css/main.f5ecf9bd.chunk.css.map": "/github.io/Epic-Battles/static/css/main.f5ecf9bd.chunk.css.map",
-    "static/media/background.png": "/github.io/Epic-Battles/static/media/background.46e2bb89.png"
+    "main.css": "/Epic-Battles/static/css/main.f5ecf9bd.chunk.css",
+    "main.js": "/Epic-Battles/static/js/main.3367b857.chunk.js",
+    "main.js.map": "/Epic-Battles/static/js/main.3367b857.chunk.js.map",
+    "runtime-main.js": "/Epic-Battles/static/js/runtime-main.2e42fe76.js",
+    "runtime-main.js.map": "/Epic-Battles/static/js/runtime-main.2e42fe76.js.map",
+    "static/css/2.a3c6ef96.chunk.css": "/Epic-Battles/static/css/2.a3c6ef96.chunk.css",
+    "static/js/2.ef09fb9c.chunk.js": "/Epic-Battles/static/js/2.ef09fb9c.chunk.js",
+    "static/js/2.ef09fb9c.chunk.js.map": "/Epic-Battles/static/js/2.ef09fb9c.chunk.js.map",
+    "index.html": "/Epic-Battles/index.html",
+    "precache-manifest.775bb33b0917b04e2c33621b5690b3c7.js": "/Epic-Battles/precache-manifest.775bb33b0917b04e2c33621b5690b3c7.js",
+    "service-worker.js": "/Epic-Battles/service-worker.js",
+    "static/css/2.a3c6ef96.chunk.css.map": "/Epic-Battles/static/css/2.a3c6ef96.chunk.css.map",
+    "static/css/main.f5ecf9bd.chunk.css.map": "/Epic-Battles/static/css/main.f5ecf9bd.chunk.css.map",
+    "static/media/background.png": "/Epic-Battles/static/media/background.46e2bb89.png"
   }
 }
