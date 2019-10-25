@@ -23,7 +23,7 @@ class ChangeBlock extends React.Component {
   render() {
     return (
       <div className='changeBlock'>
-        <h1>Выберете цвет hp очков</h1>
+        <h1>Обери колiр hp очок</h1>
         <div className='colorGroup'>
           {this.renderColorVariants()}
         </div>

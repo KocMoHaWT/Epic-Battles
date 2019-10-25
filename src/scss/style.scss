@@ -1,5 +1,4 @@
-
-//size of card 
+//size of card
 $card-width: 37.5rem;
 $card-height: 25rem;
 
@@ -36,160 +35,162 @@ $header-line-height: 1.25;
 $button-size: 6rem;
 
 html {
-	font-size: $base-font-size;
-	line-height: $base-line-height;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
 
-	// @media #{$mq-medium} {
+  // @media #{$mq-medium} {
   //   font-size: $base-font-size*0.8;
   //   line-height: $base-line-height*0.8;
   // }
 
-	@media #{$mq-large} {
-		font-size: $base-font-size*1;
-	}
+  @media #{$mq-large} {
+    font-size: $base-font-size*1;
+  }
 
-	@media #{$mq-xlarge} {
-		font-size: $base-font-size*1.4;
-	}
+  @media #{$mq-xlarge} {
+    font-size: $base-font-size*1.4;
+  }
 
-	@media #{$mq-xxlarge} {
-		font-size: $base-font-size*1.6;
-	}
+  @media #{$mq-xxlarge} {
+    font-size: $base-font-size*1.6;
+  }
 
 }
-
-//#root {
-//	background-image: url("../asserts/images/background.png")
-//}
-
 
 body {
-	 -webkit-print-color-adjust: exact;
-	 margin: 0;
-	 font-family: Helvetica, sans-serif;
-	
-	
+  -webkit-print-color-adjust: exact;
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  -webkit-user-select: none; /* Chrome all / Safari all */
+  -moz-user-select: none; /* Firefox all */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Likely future */
+
 }
 
- .wrapper {
-	 height: 100vh;
-	 width: 100%;
-	 display: flex;
-	 flex-direction: column;
- }
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
 
- .changeBlock {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	margin: 10px auto;
-	background: #2f3238;
-	border-radius: 10px;
- }
+}
 
- .playerInput {
-	height: 5rem;
-	width: 100%;
-	display: grid;
-	grid-template-columns: 0.5fr 1fr;
-	align-items: center;
-	
+.changeBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px auto;
+  background: #2f3238;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 5;
+}
 
- }
+.playerInput {
+  height: 5rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  align-items: center;
 
- .playerInput label {
-	margin-right: 5px;
-	text-align: right;
-	font-size: 1.5rem;
-	color: #01df01;
- }
 
- .playerInput input {
-	 margin-left: 5px;
-	 border: 1px solid #8904b1;
-	 border-radius: 5px;
-	 background-color: transparent;
-	 color: white;
-	 font-size: 1.5rem;
-	 margin-right: 5px;
-	 padding: 0 5px;
- }
+}
+
+.playerInput label {
+  margin-right: 5px;
+  text-align: right;
+  font-size: 1.5rem;
+  color: #01df01;
+}
+
+.playerInput input {
+  margin-left: 5px;
+  border: 1px solid #8904b1;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  font-size: 1.5rem;
+  margin-right: 5px;
+  padding: 0 5px;
+}
 
 
 /* Card
  ============================================ */
 .card {
-	display: flex;
-	
-	width: $card-width;
-	height: $card-height;
-	// max-width: 1024px;
-	margin: 0 auto;
+  display: flex;
+  z-index: 5;
+  width: $card-width;
+  height: $card-height;
+  // max-width: 1024px;
+  margin: 0 auto;
 }
 
 .card__img {
-	width: 50%;
-	height: 100%;
-	background-color:  #111;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	z-index: 1;
+  width: 50%;
+  height: 100%;
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 .img__block {
-	height: 100%;
+  height: 100%;
 }
 
 .card__img img {
-	z-index: 1;
+  z-index: 1;
 }
 
 .hidden {
-	visibility: hidden;
-	display: none;
+  visibility: hidden;
+  display: none;
 }
 
 
 .card__img:hover .inputFile {
-	visibility: visible;
+  visibility: visible;
 }
 
 .inputFile {
-	width: 100%;
-	height: 100%;
-	border: none;
-	position: absolute;
-	z-index: 3;
-	background-color: transparent;
-	/* display: flex;
-	align-items: center;
-	justify-content: center; */
-	
-	/* -webkit-user-select: none; */
-	cursor: pointer;
-	font-weight: 700;
-	// font-size: 20px;
-	visibility: hidden;
-	color: #fff;
+  width: 100%;
+  height: 100%;
+  border: none;
+  position: absolute;
+  z-index: 3;
+  background-color: transparent;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+
+  /* -webkit-user-select: none; */
+  cursor: pointer;
+  font-weight: 700;
+  // font-size: 20px;
+  visibility: hidden;
+  color: #fff;
 }
 
 .loadButton {
-	margin: auto;
-	width: $button-size;
-	height: $button-size;
-	background-color: #909090bf;
-	border-radius: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  margin: auto;
+  width: $button-size;
+  height: $button-size;
+  background-color: #909090bf;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .loadButton span {
-	margin: auto;
-	font-size: 1.5rem;
+  margin: auto;
+  font-size: 1.5rem;
 }
 
 /* .inputFile::-webkit-file-upload-button {
@@ -198,178 +199,204 @@ body {
 } */
 
 
-
 .static {
-	visibility: visible;
+  visibility: visible;
 }
 
 
 /* Player
  ============================================ */
 .player {
-	position: absolute;
-	z-index: 3;
-	min-width: 150px;
-	max-width: 75%;
-	background-color:  #111;
-	bottom: 0;
-	right: 0;
-	color: white;
-	text-align: right;
-	padding-left: 4rem;
+  position: absolute;
+  z-index: 3;
+  min-width: 150px;
+  max-width: 75%;
+  background-color: #111;
+  bottom: 0;
+  right: 0;
+  color: white;
+  text-align: right;
+  padding-left: 4rem;
 
 }
 
 .player__info {
-	height: 100%;
-	color: white;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	text-align: right;
-	padding: 0 5px;
-	word-break: break-all;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  padding: 0 5px;
+  word-break: break-all;
 }
 
 .player .title {
-	font-size: 1.25rem;
+  font-size: 1.25rem;
 }
 
 .card__health {
-	height: 100%;
-	width: 50%;
-	background-color: #111;
+  height: 100%;
+  width: 50%;
+  background-color: #111;
 }
 
 .healthTable {
-	height: 100%;
-	padding: 5px;
+  height: 100%;
+  padding: 5px;
 }
 
 .bigHealth {
-	width: 100%;
-	height: 80%;
-	display: grid;
-	grid-template-rows: repeat(5, 1fr);
-	grid-template-columns: repeat(4, 1fr);
-	margin-top: 5px;
+  width: 100%;
+  height: 80%;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 5px;
 }
 
 .smallHealth {
-	margin-top: 5px;
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
+  margin-top: 5px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .points {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-radius: 50%;
-	color: #DDD;
-	font-family: 'Lobster', cursive;
-	font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #DDD;
+  font-family: 'Lobster', cursive;
+  font-weight: 800;
 }
 
 /* Big Health
   ============================================ */
 .bigHealth .points {
-	width: $big-health-size;
-	height: $big-health-size;
-	font-size: 2rem;
-	background-color: grey;
-	color: #ffffff;
-	margin: 0 auto;
+  width: $big-health-size;
+  height: $big-health-size;
+  font-size: 2rem;
+  background-color: grey;
+  color: #ffffff;
+  margin: 0 auto;
 }
 
 /* Small Healt
   ============================================ */
 .smallHealth .points {
-	width: $small-health-size;
-	height: $small-health-size;
-	font-size: 2.5rem;
-	margin: 0 auto;
-	background-color: #745fa4;
-	color: #272324;
+  width: $small-health-size;
+  height: $small-health-size;
+  font-size: 2.5rem;
+  margin: 0 auto;
+  background-color: #745fa4;
+  color: #272324;
 }
 
- .bigHealth .special {
-	 background-color: #fff;
-	 color: black;
- }
+.bigHealth .special {
+  background-color: #fff;
+  color: black;
+}
 
- .colorView {
-	 width: 40px;
-	 height: 40px;
- }
+.colorView {
+  width: 40px;
+  height: 40px;
+}
 
- .variant {
-	 width: 45px;
-	 height: 45px;
-	 font-size: 40px;
-	 color: black;
-	 margin: 2px;
- }
+.variant {
+  width: 45px;
+  height: 45px;
+  font-size: 40px;
+  color: black;
+  margin: 2px;
+}
 
 .colorGroup {
-	display: flex;
+  display: flex;
 }
 
- .previewBlock {
-	 display: flex;
-	 flex-direction: column;
-	 width: 100%;
-	margin: 5px 10px;
-	cursor: pointer;
+.previewBlock:hover {
+  background-color: black;
+}
 
-	font-size: 2rem;
- }
+.previewBlock {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
 
- .previewBlock__big, .previewBlock__small{
-	margin: 0 auto;
-	width: $previev-oval;
-	height: $previev-oval;
- }
+  font-size: 2rem;
+}
 
- .previewBlock__big .points{
-	 background-color: #fff;
-	 color: black;
-	 height: 100%;
- }
+.previewBlock__big, .previewBlock__small {
+  margin: 0 auto;
+  width: $previev-oval;
+  height: $previev-oval;
+}
 
- .previewBlock__small {
-	 margin-top: 5px;
- }
+.previewBlock__big .points {
+  background-color: #fff;
+  color: black;
+  height: 100%;
+}
+
+.previewBlock__small {
+  margin-top: 5px;
+}
 
 .previewBlock__small .points {
-	height: 100%;
-	color: #272324;
+  height: 100%;
+  color: #272324;
 }
 
 h1 {
-	margin: 5px;
-	color: #01df01;
-	font-family: Pure Evil;
-	font-size: 2rem;
- }
+  margin: 5px;
+  color: #01df01;
+  font-family: Pure Evil;
+  font-size: 2rem;
+}
 
- @media print {
-	.changeBlock {
-		display: none;
-	}
+.mobileBro {
+  display: none;
+  background: url("../asserts/images/mob.jpg") no-repeat;
 
-	 .wrapper {
-		 background: none !important ;
-	 }
+}
+.App {
+  height: 100vh;
+}
 
-	 .inputFile {
-		 display: none;
-	 }
+@media screen and (max-width: 600px){
+  .desktop {
+    display: none;
+  }
 
-	 button {
-		 visibility: hidden;
-	 }
- }
+  .mobileBro {
+    display: block;
+    height: 100vh;
+    background-size: cover;
+  }
+}
 
+@media print {
+  .desktop__space {
+    display: none;
+  }
 
+  .changeBlock {
+    display: none;
+  }
+
+  .wrapper {
+    background: none !important;
+  }
+
+  .inputFile {
+    display: none;
+  }
+
+  button {
+    visibility: hidden;
+  }
+}
 

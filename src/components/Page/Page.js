@@ -4,16 +4,17 @@ import ChangeBlock from '../ChangeComponents/ChangeBlock'
 import colorJson from '../../colors'
 
 
+
 class Page extends Component {
   constructor(props) {
     super(props);
     this.refInputFile = React.createRef();
     this.state = {
       colorVariants: [],
-
+      backgroundUrl: '',
       currentVariant: {backgroundColor : '#745fa4', shadowColor: '#db5965'},
       title: 'Вася',
-      subTitle: 'Рубист на рельсах',
+      subTitle: 'Рубист на рейках',
       photo: null
     };
   }
@@ -23,7 +24,7 @@ class Page extends Component {
     console.log(colorJson[0].backgroundImage);
     this.setState({
       colorVariants: colorJson[0].colors,
-
+      backgroundImage: colorJson[0].backgroundImage
     })
   }
 
@@ -66,7 +67,6 @@ class Page extends Component {
     };
     return (
      <div className="wrapper" style={style}>
-       {/*<img src="../../../public/images/background.png" alt=""/>*/}
        <ChangeBlock
          colorVariants={this.state.colorVariants}
          handleClick={this.handleClick}
