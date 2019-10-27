@@ -6,7 +6,7 @@ import Page from './components/Page/Page';
 function App() {
   return (
     <div className="App">
-      <Desktop>
+      <Desktop width={2742} height={1617}>
         <img className="dragable-cursor" src={background} alt="this back"/>
         <Page className="card-page"/>
       </Desktop>

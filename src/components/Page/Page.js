@@ -13,8 +13,8 @@ class Page extends Component {
       colorVariants: [],
       backgroundUrl: '',
       currentVariant: {backgroundColor : '#745fa4', shadowColor: '#db5965'},
-      title: 'Вася',
-      subTitle: 'Рубист на рейках',
+      title: 'Марк',
+      subTitle: 'Лютий некромант',
       photo: null
     };
   }

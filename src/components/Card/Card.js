@@ -20,14 +20,14 @@ class Card extends Component {
               src={this.props.photo}
             />
             : null}
-            
-              <button 
+
+              <button
                className={!this.props.photo ? "inputFile static" : "inputFile"}
                onClick={this.props.handleButtonClick}
               >
                 <div className="loadButton">
                  <span>
-                  Select Image
+                  Завантаж зображення
                   </span>
                 </div>
               </button>
@@ -37,7 +37,7 @@ class Card extends Component {
                      id="inputFile"
                      ref={this.props.refInputFile}
               />
-            
+
 
           {this.props.photo &&
           <div className='player'>

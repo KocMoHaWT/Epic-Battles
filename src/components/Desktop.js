@@ -17,7 +17,10 @@ export default class Desktop extends React.Component {
 
   constructor(props) {
     super(props);
-    this.bounds = null;
+    const { width, height } = this.props;
+
+    this.shouldMonitorSizes = !(width && height);
+    this.bounds = (width && height) ? { x: width, y: height } : null;
     this.viewportSize = null;
     this.state = {
       viewport_x: 675,
@@ -94,6 +97,7 @@ export default class Desktop extends React.Component {
 
   preserveBounds(element) {
     if (!element) return;
+    if (!this.shouldMonitorSizes) return;
     const boundingRectangle = element.getBoundingClientRect();
     this.bounds = {
       x: boundingRectangle.width,

@@ -4,7 +4,7 @@ export const PlayerBlock = (props) => {
   return (
     <div className='playerInput'>
       <label htmlFor="title">
-        Позивний
+        Твій позивний
       </label>
       <input type="text" name='title'
              onChange={props.handleTitle}
@@ -20,4 +20,4 @@ export const PlayerBlock = (props) => {
       />
     </div>
   )
-} 
+}

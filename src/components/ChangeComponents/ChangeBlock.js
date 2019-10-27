@@ -23,16 +23,16 @@ class ChangeBlock extends React.Component {
   render() {
     return (
       <div className='changeBlock'>
-        <h1>Обери колiр hp очок</h1>
+        <h1>Обери колір кругляшок</h1>
         <div className='colorGroup'>
           {this.renderColorVariants()}
         </div>
-        {this.props.photo && <PlayerBlock
+        <PlayerBlock
           handleTitle={this.props.handleTitle}
           handleSubTitle={this.props.handleSubTitle}
           title={this.props.title}
           subTitle={this.props.subTitle}
-        />}
+        />
       </div>
     )
   }

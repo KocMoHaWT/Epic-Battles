@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=cyrillic');
+
 //size of card
 $card-width: 37.5rem;
 $card-height: 25rem;
@@ -70,7 +72,7 @@ body {
 
 .card-page {
   position: relative;
-  top: -140vh;
+  top: -145vh;
   pointer-events: none;
 }
 
@@ -116,7 +118,9 @@ body {
   margin-right: 5px;
   text-align: right;
   font-size: 1.5rem;
-  color: #01df01;
+  color: #ccc;
+  font-family: Lobster;
+  letter-spacing: 2px;
 }
 
 .playerInput input {
@@ -190,12 +194,13 @@ body {
   color: #fff;
 }
 
+.inputFile:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 .loadButton {
   margin: auto;
   width: $button-size;
-  height: $button-size;
-  background-color: #909090bf;
-  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -204,6 +209,8 @@ body {
 .loadButton span {
   margin: auto;
   font-size: 1.5rem;
+  background-color: #909090bf;
+  padding: 0.5rem;
 }
 
 /* .inputFile::-webkit-file-upload-button {
@@ -222,7 +229,7 @@ body {
 .player {
   position: absolute;
   z-index: 3;
-  min-width: 150px;
+  min-width: 50%;
   max-width: 75%;
   background-color: #111;
   bottom: 0;
@@ -365,8 +372,9 @@ body {
 
 h1 {
   margin: 5px;
-  color: #01df01;
-  font-family: Pure Evil;
+  color: #ccc;
+  font-family: Lobster;
+  letter-spacing: 2px;
   font-size: 2rem;
 }
 
