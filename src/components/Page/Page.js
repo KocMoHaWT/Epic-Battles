@@ -66,27 +66,29 @@ class Page extends Component {
       backgroundSize: 'cover'
     };
     return (
-     <div className="wrapper" style={style}>
-       <ChangeBlock
-         colorVariants={this.state.colorVariants}
-         handleClick={this.handleClick}
-         handleTitle={this.handleTitle}
-         handleSubTitle={this.handleSubTitle}
-         photo={this.state.photo}
-         title={this.state.title}
-         subTitle={this.state.subTitle}
-       />
-       <Card
-         photo={this.state.photo}
-         handleUploadPhoto={this.handleUploadPhoto}
-         backgroundColor={this.state.backgroundColor}
-         currentVariant={this.state.currentVariant}
-         title={this.state.title}
-         subTitle={this.state.subTitle}
-         handleButtonClick={this.handleButtonClick}
-        refInputFile={this.refInputFile}
-       />
-     </div>
+      <div className={this.props.className}>
+        <div className="wrapper" style={style}>
+          <ChangeBlock
+            colorVariants={this.state.colorVariants}
+            handleClick={this.handleClick}
+            handleTitle={this.handleTitle}
+            handleSubTitle={this.handleSubTitle}
+            photo={this.state.photo}
+            title={this.state.title}
+            subTitle={this.state.subTitle}
+          />
+          <Card
+            photo={this.state.photo}
+            handleUploadPhoto={this.handleUploadPhoto}
+            backgroundColor={this.state.backgroundColor}
+            currentVariant={this.state.currentVariant}
+            title={this.state.title}
+            subTitle={this.state.subTitle}
+            handleButtonClick={this.handleButtonClick}
+            refInputFile={this.refInputFile}
+          />
+        </div>
+      </div>
     );
   }
 }

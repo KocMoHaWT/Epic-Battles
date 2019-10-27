@@ -2,13 +2,13 @@
 $card-width: 37.5rem;
 $card-height: 25rem;
 
-//big-health 
+//big-health
 $big-health-size: 3.75rem;
 
 // small health
 $small-health-size: 3.12rem;
 
-// preview ovals 
+// preview ovals
 $previev-oval: 3rem;
 
 // Breakpoints
@@ -31,7 +31,7 @@ $base-font-size: 16px;
 $base-line-height: 1.5;
 $header-line-height: 1.25;
 
-// button size 
+// button size
 $button-size: 6rem;
 
 html {
@@ -68,13 +68,26 @@ body {
 
 }
 
+.card-page {
+  position: relative;
+  top: -140vh;
+  pointer-events: none;
+}
+
+.dragable-cursor {
+  cursor: grab;
+}
+
 .wrapper {
   height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   background: transparent;
+}
 
+.wrapper > * {
+  pointer-events: all;
 }
 
 .changeBlock {

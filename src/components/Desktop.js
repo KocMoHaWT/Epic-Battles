@@ -1,5 +1,4 @@
 import React from 'react';
-import Page from './Page/Page';
 
 const DEFAULT_VIEWPORT_STYLE = {
   width: '100vw',
@@ -128,7 +127,6 @@ export default class Desktop extends React.Component {
         >
           {this.props.children}
         </div>
-        <Page />
       </div>
     </div>);
   }
